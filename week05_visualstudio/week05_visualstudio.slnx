@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="week05_visualstudio.vcxproj" Id="c5658ee4-4c91-4aae-88b1-5e46363eb53d" />
+</Solution>
