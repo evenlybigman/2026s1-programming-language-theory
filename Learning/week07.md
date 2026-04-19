@@ -1,4 +1,4 @@
-# 1day report
+# 1day report - week07
 
 ## Gemini CLI
 

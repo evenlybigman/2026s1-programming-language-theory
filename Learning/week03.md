@@ -1,6 +1,4 @@
-# 3주차 1day report
-
-### 
+# 1day report - week03
 
 ### 프로그래밍 언어의 역사
 
