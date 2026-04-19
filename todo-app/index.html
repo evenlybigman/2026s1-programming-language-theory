@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>매일 할 일</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1 class="title">매일 할 일</h1>
+      <p class="subtitle">
+        추가한 할 일은 <strong>예정</strong>에 표시됩니다. 체크하면 <strong>완료</strong> 목록으로
+        옮겨집니다.
+      </p>
+    </header>
+
+    <form class="add-form" id="add-form" autocomplete="off">
+      <div class="add-form-fields">
+        <label for="todo-input" class="visually-hidden">할 일 입력</label>
+        <input
+          type="text"
+          id="todo-input"
+          class="todo-input"
+          placeholder="할 일을 입력하세요"
+          maxlength="500"
+          required
+        />
+        <div class="due-field">
+          <label for="todo-due" class="due-label">마감</label>
+          <input type="date" id="todo-due" class="todo-due-input" title="선택 사항" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">추가</button>
+    </form>
+
+    <div class="todo-board" aria-live="polite">
+      <section class="todo-section" id="pending-section" aria-labelledby="pending-heading">
+        <h2 id="pending-heading" class="todo-section-title">예정</h2>
+        <ul class="todo-list" id="todo-list-pending"></ul>
+        <p class="section-empty" id="empty-pending" hidden>예정된 할 일이 없습니다.</p>
+      </section>
+
+      <section class="todo-section" id="completed-section" aria-labelledby="completed-heading">
+        <h2 id="completed-heading" class="todo-section-title">완료</h2>
+        <ul class="todo-list" id="todo-list-completed"></ul>
+        <p class="section-empty" id="empty-completed" hidden>완료된 할 일이 없습니다.</p>
+      </section>
+    </div>
+
+    <p class="empty-state" id="empty-state" hidden>
+      할 일이 없습니다. 위에서 추가해 보세요.
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
