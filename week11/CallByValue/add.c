@@ -9,7 +9,7 @@ void add(int a, int b) {
 	b += 4;
 }
 
-void padd(int* a, int* b) {
+void add2(int* a, int* b) {
 	big2 += 10;
 	*a += 2;
 	*b += 4;

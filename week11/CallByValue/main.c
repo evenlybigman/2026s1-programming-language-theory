@@ -11,7 +11,7 @@ int main() {
 	int j = 2;
 
 	add(i, big);
-	padd(&j, &big2);
+	add2(&j, &big2);
 	printf("i = %d : big = %d\n", i, big);
 	printf("i = %d : big = %d\n", j, big2);
 	return 0;
